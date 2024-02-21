@@ -6,7 +6,7 @@ lirc_client = lirc.Client()
 
 
 def radio_one():
-    lirc_client.send_once(remote=REMOTE, key="tuner-2")
+    lirc_client.send_once(remote=REMOTE, key="tuner-1")
     lirc_client.send_once(remote=REMOTE, key="tuner-enter")
     ui.notify("tuning to CBC radio one Halifax")
 
