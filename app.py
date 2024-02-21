@@ -21,8 +21,8 @@ def main():
     with ui.column().classes("w-full items-center"):
         ui.button("CBC Radio 1", on_click=radio_one)
         ui.button("CBC Radio 2", on_click=radio_two)
-    ui.run()
+    ui.run(host="0.0.0.0", port=8080, dark=True)
 
 
-if __name__ == "__main__":
+if __name__ in {"__main__", "__mp_main__"}:
     main()
